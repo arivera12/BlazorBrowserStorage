@@ -18,7 +18,7 @@ Both Session and Local storage types are supported.
 
 ## No Javascript Library Reference Dependency
 
-This library was ported from [BlazorExtensions.Storage](https://github.com/BlazorExtensions/Storage) but removing any javascript dependency.
+This library was ported and improved from [BlazorExtensions.Storage](https://github.com/BlazorExtensions/Storage) but removing any javascript dependency.
 
 ## Usage
 
