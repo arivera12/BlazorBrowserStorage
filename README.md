@@ -1,12 +1,12 @@
 # BlazorBrowserStorage
 
+[![Nuget](https://buildstats.info/nuget/BlazorBrowserStorage?v=1.0.0)](https://www.nuget.org/packages/BlazorBrowserStorage)
+
 HTML5 Storage API for Blazor without any JavaScript Library Dependency.
 
 This package wraps [HTML5 Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage) APIs. 
 
 Both Session and Local storage types are supported.
-
-[![Nuget](https://buildstats.info/nuget/BlazorBrowserStorage?v=1.0.0)](https://www.nuget.org/packages/BlazorBrowserStorage)
 
 ## Installation
 
@@ -16,7 +16,7 @@ Both Session and Local storage types are supported.
 
 `services.AddBlazorBrowserStorage();`
 
-## No Javascript Library Reference Dependency
+## No javascript library reference dependency
 
 This library was ported and improved from [BlazorExtensions.Storage](https://github.com/BlazorExtensions/Storage) but removing any javascript dependency.
 
