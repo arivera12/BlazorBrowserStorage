@@ -59,4 +59,5 @@ This library was ported and improved from [BlazorExtensions.Storage](https://git
 	</tr>
 </table>
 
-## MIT
+## License
+MIT
