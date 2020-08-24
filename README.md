@@ -50,7 +50,7 @@ This library was ported and improved from [BlazorExtensions.Storage](https://git
 	</tr>
 	<tr>
 		<td>Gets an item by key of a type from the storage</td>
-		<td>GetItem<T>(string key)</td>
+		<td>GetItem&lt;T&gt;(string key)</td>
 	</tr>
   <tr>
 		<td>Gets a key name by index from the storage</td>
@@ -62,7 +62,7 @@ This library was ported and improved from [BlazorExtensions.Storage](https://git
 	</tr>
   <tr>
 		<td>Sets an item by key and by item type in the storage</td>
-		<td>SetItem<T>(string key, T item)</td>
+		<td>SetItem&lt;T&gt;(string key, T item)</td>
 	</tr>
 </table>
 
