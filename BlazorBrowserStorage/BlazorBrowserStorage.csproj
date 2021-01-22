@@ -5,7 +5,7 @@
     <RazorLangVersion>3.0</RazorLangVersion>
     <Authors>Anthony G. Rivera Cosme</Authors>
     <Description>HTML5 Storage API Implementation for Blazor without any JavaScript Dependency.</Description>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added try and catch to prevent errors when setting and reading values from the storage.</PackageReleaseNotes>
     <Copyright>Anthony G. Rivera Cosme</Copyright>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/arivera12/BlazorBrowserStorage</PackageProjectUrl>
@@ -14,6 +14,7 @@
     <PackageTags>c#, blazor, HTML 5 Storage API</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 

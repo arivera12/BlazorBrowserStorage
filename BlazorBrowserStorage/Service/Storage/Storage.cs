@@ -17,7 +17,14 @@ namespace BlazorBrowserStorage
         public ValueTask Clear() => JSRuntime.InvokeVoidAsync($"window.{StorageName}.clear");
         public async ValueTask<T> GetItem<T>(string key)
         {
-            return JsonConvert.DeserializeObject<T>(await JSRuntime.InvokeAsync<string>($@"window.{StorageName}.getItem", key));
+            try
+            {
+                return JsonConvert.DeserializeObject<T>(await JSRuntime.InvokeAsync<string>($@"window.{StorageName}.getItem", key));
+            }
+            catch
+            {
+                return default;
+            }
         }
         public ValueTask<string> Key(int index) => JSRuntime.InvokeAsync<string>($@"window.{StorageName}.key", index);
         public ValueTask RemoveItem(string key)
@@ -26,7 +33,14 @@ namespace BlazorBrowserStorage
         }
         public ValueTask SetItem<T>(string key, T item)
         {
-            return JSRuntime.InvokeVoidAsync($@"window.{StorageName}.setItem", key, JsonConvert.SerializeObject(item));
+            try
+            {
+                return JSRuntime.InvokeVoidAsync($@"window.{StorageName}.setItem", key, JsonConvert.SerializeObject(item));
+            }
+            catch
+            {
+                return new ValueTask(Task.CompletedTask);
+            }
         }
     }
 }
